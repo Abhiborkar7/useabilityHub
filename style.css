@@ -134,6 +134,10 @@ a {
     gap: 40px;
 }
 
+.nav-toggle {
+    display: none;
+}
+
 /* header section */
 
 header {
