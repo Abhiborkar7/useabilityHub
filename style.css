@@ -120,6 +120,7 @@ a {
 .main-nav {
     margin-top: 20px;
     justify-content: space-between;
+    position: relative;
 }
 
 .company-logo img {
@@ -195,6 +196,7 @@ header {
 
 .features-header {
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .features-heading-text {
@@ -228,6 +230,10 @@ header {
     gap: 30px;
 }
 
+#second-big-feature {
+    flex-direction: row-reverse;
+}
+
 .feature-img img {
     width: 100%;
 }
@@ -239,9 +245,14 @@ header {
 
 /* examples section */
 
+.examples-section {
+    padding: 80px var(--padding-inline-section);
+}
+
 .examples-header {
     flex-direction: column;
     gap: 20px;
+    text-align: center;
 }
 
 .examples-area {
@@ -286,6 +297,7 @@ header {
     flex-direction: column;
     gap: 30px;
     color: white;
+    text-align: center;
 }
 
 .cta-section {
@@ -326,4 +338,5 @@ footer {
 .subfooter-container {
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }

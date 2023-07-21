@@ -23,7 +23,7 @@
             <a href="#" class="company-logo">
                 <img src="./assets/asset 1.png" alt="">
             </a>
-            <div class="nav-links">
+            <div class="nav-links" id="nav-links">
                 <ul class="flex" style="list-style-type: none;">
                     <li><a href="#" class="hover-link">Products</a></li>
                     <li><a href="#" class="hover-link">Customer</a></li>
@@ -33,7 +33,7 @@
                     <li><a href="#" class="hover-link primary-button">Sign up</a></li>
                 </ul>
             </div>
-            <a href="#" class="nav-toggle hover-link">
+            <a href="#" class="nav-toggle hover-link" id="nav-toggle">
                 <i class="fa-solid fa-bars">E</i>
             </a>
         </div>
@@ -137,7 +137,7 @@
     </section>
 
     <section class="big-feature-section">
-        <div class="container flex big-feature-container" style="flex-direction: row-reverse">
+        <div class="container flex big-feature-container" id="second-big-feature">
             <div class="feature-img">
                 <img src="assets/asset 21.png" alt="">
             </div>
@@ -161,6 +161,8 @@
             </div>
         </div>
     </section>
+
+    <!-- examples section -->
 
     <section class="examples-section">
         <div class="container">
@@ -244,5 +246,14 @@
 
 
     <script src="https://kit.fontawesome.com/6393972891.js" crossorigin="anonymous"></script>
+
+    <script>
+        const toggleButton = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        toggleButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        })
+    </script>
 </body>
 </html>
